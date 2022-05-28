@@ -1,0 +1,53 @@
+section{
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#box1{
+  background-color: red;
+  transition: 1s all;
+}
+#box2 {
+  background-color: yellow;
+  transition: 1s all;
+}
+#box3{
+  background-color: blue;
+  transition: 1s all;
+}
+#box4{
+  background-color: green;
+  transition: 1s all;
+}
+section > div {
+  width: 150px;
+  height: 150px;
+}
+section:hover > #box1{
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  transition: transform 1s ease-in-out;
+}
+section:hover >#box3{
+  transform: rotate(-90deg);
+  transform-origin: 0px 150px;
+  transition: transform 1s ease-in-out;
+}
+section:hover > #box2{
+  transform: rotate(-90deg);
+  transform-origin: 150px 0;
+  transition: transform 1s ease-in-out;
+}
+section:hover > #box4 {
+  transform: rotate(90deg);
+  transform-origin: 150px 150px;
+  transition: transform 1s ease-in-out;
+}
+h1{
+  position: absolute;
+  left: 49vw;
+  top: 24%;
+  z-index: -1000;
+}
