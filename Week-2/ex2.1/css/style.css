@@ -1,0 +1,28 @@
+section {
+  margin: 0 auto;
+  display: flex;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+p,
+img {
+  width: 50%;
+  margin: 1rem;
+}
+body {
+  margin: 2rem;
+  background-color: beige;
+}
+
+form {
+  display: flex;
+  width: 220px;
+  flex-direction: column;
+}
+.button:hover {
+  color: white;
+  background-color: brown;
+}
